@@ -1,5 +1,5 @@
 ﻿import React, { useCallback, useState } from 'react';
-import { ReactThreeFiber } from 'react-three-fiber';
+import { ReactThreeFiber } from '@react-three/fiber';
 
 interface BoxProps {
   dimensions?: any;

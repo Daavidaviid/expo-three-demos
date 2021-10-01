@@ -1,6 +1,6 @@
 ﻿import React from 'react';
 import { StyleSheet } from 'react-native';
-import { Canvas } from 'react-three-fiber';
+import { Canvas } from '@react-three/fiber'
 import Box from './Box';
 import Controls from './Controls';
 
@@ -12,7 +12,7 @@ export default function ReactThreeFiberCanvas({
   setCardText,
 }: ReactThreeFiberCanvasProps) {
   return (
-    <Canvas style={styles.canvas} camera={{ position: [0, 4, 4] }} shadowMap>
+    <Canvas style={styles.canvas} camera={{ position: [0, 4, 4] }} shadows={{enabled: true}}>
       <ambientLight intensity={0.5} color={0x444444 as any} />
       <pointLight position={[-10, 10, -10]} intensity={1} />
       <spotLight

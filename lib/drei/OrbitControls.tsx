@@ -1,5 +1,5 @@
 import React, { forwardRef, useEffect, useMemo } from 'react'
-import { ReactThreeFiber, useThree, useFrame, Overwrite } from 'react-three-fiber'
+import { ReactThreeFiber, useThree, useFrame, Overwrite } from '@react-three/fiber'
 import { OrbitControls as OrbitControlsImpl } from 'three/examples/jsm/controls/OrbitControls'
 
 export type OrbitControls = Overwrite<
